@@ -1,0 +1,140 @@
+.hero_animation {
+  background-image: linear-gradient(
+    147.92deg,
+    hsla(239, 100%, 20%, 0.456) 10.41%,
+    hsla(0, 0%, 100%, 0) 89.25%
+  );
+  animation: changeBackgroundColor 8s infinite alternate;
+}
+
+@keyframes changeBackgroundColor {
+  0%, 100% {
+    opacity: 1;
+  }
+  16.67% {
+    opacity: 0.9;
+  }
+  33.33% {
+    opacity: 0.8;
+  }
+  50% {
+    opacity: 0.6;
+  }
+  66.67% {
+    opacity: 0.5;
+  }
+  83.33% {
+    opacity: 0.4;
+  }
+}
+
+/* EditHero.css */
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.content-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 1000px;
+  opacity: 0;
+  animation: fadeIn 1s ease forwards, slideIn 2s ease forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0; /* Make sure image fades in first */
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateY(-50px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.image-container {
+  margin-bottom: 20px;
+}
+
+.image {
+  max-width: 500px;
+  height: auto;
+  border-radius: 50%;
+}
+
+.text-container {
+  width: 100%;
+  padding: 0 20px;
+}
+
+.title,
+.subtitle {
+  width: 100%;
+  font-family: Poppins;
+  background: transparent;
+  border: none;
+  resize: none;
+}
+
+.save-button {
+  width: 50%;
+  min-height: 40px;
+  border-radius: 5px;
+  background-color: #cccccc34;
+  cursor: not-allowed;
+  margin-top: 20px;
+}
+
+.save-button.enabled {
+  cursor: pointer;
+  background-color: #42d383;
+}
+
+.save-button.disabled {
+  opacity: 0.5;
+}
+
+/* Media queries for responsiveness */
+@media screen and (min-width: 768px) {
+  .content-wrapper {
+    flex-direction: row;
+  }
+
+  .image-container {
+    margin-right: 20px;
+    margin-bottom: 0;
+  }
+
+  .text-container {
+    width: 70%;
+  }
+}
+
+.edit-icon {
+  display: flex;
+  justify-content: end;
+}
+
+.edit-icon:hover {
+  filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.8)) 
+          drop-shadow(0 0 10px rgba(255, 255, 255, 0.6)) 
+          drop-shadow(0 0 15px rgba(255, 255, 255, 0.4)) 
+          drop-shadow(0 0 20px rgba(255, 255, 255, 0.2)) 
+          drop-shadow(0 0 30px rgba(255, 255, 255, 0.1));
+}

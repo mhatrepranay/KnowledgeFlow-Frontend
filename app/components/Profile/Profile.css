@@ -1,0 +1,60 @@
+.fade-in11{
+  animation: fadeInLeftAnimation 1s ease-in forwards;
+  opacity: 0;
+  transform: translateX(-20px); /* Initial position off-screen to the left */
+}
+
+@keyframes fadeInLeftAnimation {
+  from {
+    opacity: 0;
+    transform: translateY(-20px); /* Move from left to right */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0); /* Move to the original position */
+  }
+}
+
+#admin:active{
+background-color: black;
+color: white;
+}
+
+#logout:active{
+background-color: black;
+color: white;
+}
+
+
+/* For medium screens (640px) */
+@media (min-width: 640px) {
+    .grid-mdw {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 25px;
+    }
+  }
+  
+  /* For large screens (1024px) */
+  @media (min-width: 1024px) {
+    .grid-lgw {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 25px;
+    }
+  }
+  
+  
+  
+  /* For extra-large screens (1500px) */
+  @media (min-width: 1500px) {
+    .grid-xlw {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 35px;
+    }
+  }
+  
+  
+  
+  

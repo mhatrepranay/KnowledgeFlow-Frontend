@@ -1,0 +1,71 @@
+/* For medium screens (640px) */
+@media (min-width: 640px) {
+    .grid-md {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 25px;
+    }
+  }
+  
+  /* For large screens (1024px) */
+  @media (min-width: 1024px) {
+    .grid-lg {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 25px;
+    }
+  }
+  
+  /* For extra-large screens (1500px) */
+  @media (min-width: 1500px) {
+    .grid-xl1 {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 35px;
+    }
+  }
+  /* For medium screens (640px) */
+  @media (min-width: 640px) {
+    .grid-md1 {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 25px;
+    }
+  }
+  
+  /* For large screens (1024px) */
+  @media (min-width: 1024px) {
+    .grid-lg1 {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 25px;
+    }
+  }
+  
+  /* For extra-large screens (1500px) */
+  @media (min-width: 1500px) {
+    .grid-xl {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 35px;
+    }
+  }
+  
+  /* For medium screens (640px) */
+  @media (min-width: 640px) {
+    /* Apply margin-top of -60px to the third child of .md */
+    .grid-md1 > *:nth-child(3) {
+      margin-top: -30px;
+      border-top: 0;
+    }
+    .grid-md1 > *:nth-child(1) {
+      border-bottom: 0;
+    }
+  
+    /* Apply margin-top of -40px to the sixth child of .md */
+    .grid-md1 > *:nth-child(6) {
+      margin-top: -10px;
+    }
+  }
+  
+  

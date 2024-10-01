@@ -1,0 +1,94 @@
+.hero_animation {
+  background-image: linear-gradient(
+    147.92deg,
+    hsla(239, 89%, 14%, 0.922) 10.41%,
+    hsla(0, 0%, 100%, 0.272) 89.25%
+  );
+  animation: changeBackgroundColor 4s infinite alternate;
+}
+h1{
+  font-size:"25px";
+  font-weight: 600;
+    
+}
+.recording {
+  animation: recording-animation 0.5s infinite alternate;
+}
+
+
+/* Add a keyframes rule for the color animation */
+@keyframes color-change {
+  0% { color: rgb(0, 107, 28); }      /* Dark green */
+  25% { color: rgb(67, 150, 88); }    /* Medium green */
+  50% { color: rgb(156, 240, 156); }  /* Light green */
+  75% { color: rgb(124, 178, 124); }  /* Another shade of green */
+  100% { color: rgb(220, 220, 220); } /* Almost white */
+}
+.simple-color{
+  color: white;
+}
+
+
+/* Apply the animation to the icon */
+.multicolor-microphone {
+  animation: color-change 2s infinite; /* Adjust the duration as needed */
+}
+
+
+
+@keyframes recording-animation {
+  from {
+    background-color: transparent;
+  }
+  to {
+    background-color: red;
+  }
+}
+
+@keyframes changeBackgroundColor {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+    background-image: linear-gradient(
+      147.92deg,
+      hsla(239, 91%, 13%, 0.913) 10.41%,
+      hsla(0, 0%, 100%, 0.272) 89.25%
+    );
+  }
+}
+
+
+  /* .fade-in {
+    animation: fadeInAnimation 1s ease-in forwards;
+    opacity: 0;
+  }
+  
+  @keyframes fadeInAnimation {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  } */
+  .fade-in{
+    animation: fadeInLeftAnimation 1s ease-in forwards;
+    opacity: 0;
+    transform: translateX(-20px); /* Initial position off-screen to the left */
+  }
+  
+  @keyframes fadeInLeftAnimation {
+    from {
+      opacity: 0;
+      transform: translateY(-20px); /* Move from left to right */
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0); /* Move to the original position */
+    }
+  }
+  
+  

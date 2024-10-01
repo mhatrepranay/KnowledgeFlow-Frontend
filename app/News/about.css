@@ -1,0 +1,15 @@
+.category-button {
+    margin-right: 10px;
+    padding: 8px 16px;
+    background-color: #069966;
+    border: none;
+    border-radius: 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .category-button.active {
+    background-color: #ffb011;
+    color: #fff;
+  }
+  

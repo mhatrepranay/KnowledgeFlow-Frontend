@@ -1,0 +1,124 @@
+.quiz-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #080314; /* Change background color */
+}
+
+.quiz-title {
+  border: 2px solid rgb(255, 255, 255);
+  font-size: 2.5rem; /* Reduce font size */
+  margin-bottom: 1rem;
+  padding-right: 140px;
+  padding-left: 140px;
+  border-radius: 10px;
+}
+
+.result-container {
+  text-align: center;
+  margin-top: 2rem; /* Add margin to separate from the quiz */
+}
+
+.question-container {
+  
+  width: 70%;
+  max-width: 800px;
+  padding: 2rem;
+ background: transparent;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.newcon{
+  background-color: #080314;
+
+}
+.result-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  text-align: left;
+  margin-top: 2rem;
+  font-size: 25px;
+  color: white;
+}
+
+.result-details {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.result-details p {
+  margin-bottom: 0.5rem;
+}
+
+.result-status {
+  align-self: flex-start;
+}
+
+
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+
+.navigation-button, .submit-button {
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.navigation-button {
+  background-color: #013245; /* Change navigation button color */
+  color: #fff;
+}
+.col11{
+  accent-color: rgb(77, 0, 77);
+}
+.navigation-button:disabled {
+  background-color: #ced4da;
+  cursor: not-allowed;
+}
+
+.submit-button {
+  background-color: #28a745; /* Change submit button color */
+  color: #fff;
+}
+.question {
+  font-size: 1.2rem; /* Reduce font size */
+  margin-bottom: 1.5rem;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+ 
+.header-container {
+  display: flex;
+  align-items: center;
+}
+.back-button {
+  margin-right: 20px; /* Adjust as needed */
+}
+
+li {
+  margin-bottom: 1rem;
+}
+
+input[type="radio"] {
+  margin-right: 1rem;
+  width: 25px; /* Increase radio input size */
+  height: 25px; /* Increase radio input size */
+  cursor: pointer;
+}
+.dotted-line {
+  border-top: 2px solid rgb(132, 0, 105);
+}

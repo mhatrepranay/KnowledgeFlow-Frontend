@@ -1,0 +1,11 @@
+#id{
+    font-size: "25px";
+    font-weight: 600;
+}
+
+#Card:active{
+background-color: black;
+color: black;
+}
+
+

@@ -1,0 +1,63 @@
+/* calendar.css */
+
+/* Define custom colors for event background */
+/* calendar.css */
+
+/* Define custom colors for event background */
+.fc-event-main {
+  background-color: rgb(0, 39, 22); /* Event background color */
+  color: #ffffff; /* Event text color */
+  border:none;
+  white-space: normal; /* Allow text wrapping */
+  word-wrap: break-word; /* Allow word wrapping */
+}
+
+
+/* Define custom color for today's date */
+.fc .fc-daygrid .fc-day-today {
+   
+  background-color: rgba(21, 77, 161, 0.55); /* Set the background color for today */
+}
+
+.fc .fc-scroller{
+  background-color: rgb(0, 37, 17);
+}
+
+.fc .fc-button-primary:disabled {
+  background-color: black;
+  opacity: 2;
+  color: white;
+}
+
+/* Define custom color for all days except today */
+.fc-day.fc-daygrid-day {
+  padding: 10px;
+  font-size: 20px;
+  background-color: rgb(70, 108, 81); /* Set the background color for all days */
+}
+
+/* Define custom color for weekends */
+.fc-sat, .fc-sun {
+  background-color: #f0f0f0;
+}
+
+/* Define custom color for calendar header */
+.fc-header-toolbar {
+  background-color: #37bb7b98; /* Adjusted header background color */
+  color: #fff; /* Adjusted header text color */
+}
+
+/* Define custom color for modal background */
+.react-modal-overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.react-modal-content {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.scrollbar-hidden::-webkit-scrollbar {
+  display: none;
+}
